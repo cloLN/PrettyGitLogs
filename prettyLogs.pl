@@ -20,6 +20,10 @@ use JSON qw( decode_json );
 use Text::Tabs;
 use Encode;
 use Try::Tiny;
+use Config::Identity;
+
+#my %identity = Config::Identity::PAUSE->load_check;
+#print "user: $identity{user} password: $identity{password}\n";
 
 #read in config file
 $cfg = new Config::Simple('prettylogs.conf');
