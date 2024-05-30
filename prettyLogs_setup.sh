@@ -11,4 +11,4 @@ sudo cpanm Date::PeriodParser --force
 sudo cpanm Config::Identity --force
 
 echo "Done"
-echo "Now Run PrettyLogs.pl"
+echo "Now Run: perl PrettyLogs.pl"
