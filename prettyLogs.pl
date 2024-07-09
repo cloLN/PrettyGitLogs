@@ -272,7 +272,7 @@ sub outputToAll
 		open($myhtmout, '>', $htmout) or die;
 		close $myhtmout;
 		
-		$sysout = "cat $tmphtml  | sed -E 's=(IDE|EPE|HH|HPCC|HD|HSIC|JAPI|JDBC|ML|ODBC|RH|WSSQL)(-[0-9]+)=\\\<a\\ href\\\=\\\"https://hpccsystems.atlassian.net/\\1\\2\\\"\\\ target\\\=\\\"_blank\"\\\>\\1\\2\\</a\\\>=g' > $htmout";
+		$sysout = "cat $tmphtml  | sed -E 's=(IDE|EPE|HH|HPCC|HD|HSIC|JAPI|JDBC|ML|ODBC|RH|WSSQL)(-[0-9]+)=\\\<a\\ href\\\=\\\"https://hpccsystems.atlassian.net/browse/\\1\\2\\\"\\\ target\\\=\\\"_blank\"\\\>\\1\\2\\</a\\\>=g' > $htmout";
 		
 		system($sysout);
 		
